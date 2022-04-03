@@ -8,9 +8,13 @@ from random import choice
 # USER SELECTION
 #
 
+# modify the duplication to make the code more effecient
+
+varsList= ["rock", "paper", "scissors"]
+
 u = input("Please choose one of 'Rock', 'Paper', or 'Scissors': ").lower()
 print("USER CHOICE:", u)
-if u not in ["rock", "paper", "scissors"]:
+if u not in varsList:
     print("OOPS, TRY AGAIN")
     exit()
 
@@ -18,7 +22,7 @@ if u not in ["rock", "paper", "scissors"]:
 # COMPUTER SELECTION
 #
 
-c = choice(["rock", "paper", "scissors"])
+c = choice(varsList)
 print("COMPUTER CHOICE:", c)
 
 #
